@@ -4,10 +4,10 @@ class Results extends Component {
   render(){
 
     let {jobs}=this.props
-    let results=jobs.map((movie, index) => {
+    let results=jobs.map((job, index) => {
       return (
         <div key={index}>
-        <p>{job.name}</p>
+        <p>{job.position_title}</p>
         </div>
       )
     })

@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import Search from './Search'
 import Results from './Results'
-import {queryOmdb} from "./Utils"
+import {queryGHJobs} from "./Utils"
 
 class SearchContainer extends Component {
   constructor(props) {
@@ -9,8 +9,8 @@ class SearchContainer extends Component {
     this.state = {
       query:'',
       hasSearched: false,
+      test: true,
       jobs: []
-
     }
   }
 
@@ -23,20 +23,21 @@ class SearchContainer extends Component {
   handleSearchSubmit(e){
     e.preventDefault()
     let component=this
-    queryOmdb(this.state.query).then( data => {
+    queryGHJobs(this.state.query).then( data => {
     component.setState({
       query: '',
       hasSearched: true,
+      test: false,
       jobs: data
     })
   })
   }
 
   render(){
-
     if (this.state.hasSearched){
       return(
-        <Results jobs={this.state.jobs}/>
+        <Results
+          jobs={this.state.jobs}/>
       )
     } else {
         return (
