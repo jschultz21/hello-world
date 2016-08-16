@@ -1,0 +1,224 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ *{
+   list-style-type:none;
+ }
+
+ li{
+   display:inline-block;
+ }
+
+ .main-nav{
+   text-transform:uppercase;
+   text-align:center;
+ }
+
+ .main-nav a{
+   color: #fc7753;
+   text-decoration:none;
+   font-size: 16px;
+   flex-grow:1;
+   margin: 0 10px;
+   font-weight:bold;
+   margin-bottom:-10px;
+ }
+
+ h1, h2{
+   font-family: "Raleway";
+ }
+
+ a {
+   color: #fc7753;
+   font-weight:bold;
+ }
+
+.header {
+  font-size: 60px;
+  font-family: 'Monaco', sans-serif;
+  text-align: center;
+  color: #ebebd3;
+}
+
+.dashboard {
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  height:900px;
+  margin-top: -20px;
+
+}
+
+.dashboard > div {
+  margin: 10px;
+  background-color:#dff2d8;
+  border-radius: 5px;
+  padding: 15px
+}
+
+.jobsBox {
+  margin: 0 20px;
+  background-color:#dff2d8;
+  border-radius: 5px;
+  padding:20px 0;
+}
+
+.blogs{
+max-width: 400px;
+flex-grow: 1;
+}
+
+.todos {
+  flex-grow:2;
+}
+
+.todo {
+  background-color: #f7f7f7;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 2px;
+}
+
+.savedJobs {
+  flex-grow: 1;
+  overflow:scroll;
+  min-width: 280px;
+}
+
+.dashboardHeader{
+  text-align: center;
+  font-size: 30px;
+}
+
+.blogContainer {
+  height: 350px;
+  overflow:scroll;
+  padding:0;
+
+}
+
+
+.savedPosts {
+  overflow:scroll;
+  height: 330px;
+}
+.searchBox form {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.searchBox form input {
+  background: transparent;
+    background: rgba(163, 135, 106, 0.15);
+    background-clip: padding-box;
+
+    border: none;
+    border-radius:         26px;
+
+    box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.1),
+                        0 1px 0 rgba(255, 255, 255, 0.5),
+                        inset 0 1px 2px rgba(0, 0, 0, 0.3),
+                        0 0 40px rgba(255, 255, 255, 0.3);
+
+    color: #333;
+    height: 26px;
+    margin: 10px;
+    outline: none;
+    padding: 0 20px 0 20px;
+
+    transition:         all .1s linear;
+
+    width: 85%;
+}
+
+.searchBox form input:focus {
+  background: transparent;
+    background: rgba(163, 135, 106, 0.2);
+
+    box-shadow:         inset 0 0 5px rgba(0, 0, 0, 0.2),
+                        0 1px 0 rgba(255, 255, 255, 0.7),
+                        inset 0 1px 2px rgba(0, 0, 0, 0.4),
+                        0 0 40px rgba(255, 255, 255, 0.5);
+}
+
+
+
+.todoForm {
+  margin: 0px auto;
+  padding: 16px;
+  background: #F7F7F7;
+}
+
+
+.searchPage {
+  display:flex;
+  flex-direction:row;
+}
+
+.searchHeader {
+  font-size:30px;
+  text-align:center;
+}
+
+.savedJobsSearch {
+  min-width:250px;
+  padding: 0 15px;
+  background-color: #dff2d8;
+  overflow:scroll;
+  height:600px;
+  right:0;
+  border-radius:10px;
+
+}
+
+.searchContainer1 {
+  flex-grow:3;
+}
+
+.results {
+  flex-grow:3;
+}
+
+.todoForm input {
+   width: 92%;
+   background: #fff;
+   margin-bottom: 4%;
+   border: 1px solid #ccc;
+   padding: 3%;
+   color: #555;
+}
+
+.todoForm input:focus {
+    box-shadow: 0 0 5px #fc7753;
+    padding: 3%;
+    border: 1px solid #fc7753;
+}
+
+ .todoForm button{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3%;
+    background: #fc7753;
+    border-bottom: 2px solid #f27935;
+    color: #fff;
+}
+
+ button:hover{
+    background: #f27935;
+}
